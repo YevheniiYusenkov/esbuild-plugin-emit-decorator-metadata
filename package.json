@@ -24,6 +24,7 @@
   },
   "keywords": [
     "emitDecoratorMetadata",
+    "plugin",
     "esbuild"
   ],
   "peerDependencies": {
