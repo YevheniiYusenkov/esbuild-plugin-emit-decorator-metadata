@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a plugin for [esbuild](https://esbuild.github.io/) to support the tsconfig setting `"emitDecoratorMetadata": true,`
+This is a plugin for [esbuild](https://esbuild.github.io/) to support the tsconfig setting `"emitDecoratorMetadata": true,` for TypeScript decorators and `reflect-metadata`. It provides fast, optimized handling of decorator metadata with correct source maps, supports both ESM and CommonJS, and offers worker-threads for high performance builds.
 
 When the decorator flag is set to `true`, the build process will inspect each .ts file and upon a decorator, will transpile with Typescript.
 
