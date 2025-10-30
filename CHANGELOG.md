@@ -1,5 +1,9 @@
 # Changelog
 
+# 0.2.1
+
+- Added tags to package.json
+
 ## 0.2.0
 
 - Added worker pool for parallel transpilation (workers option: number | "auto" | false).
