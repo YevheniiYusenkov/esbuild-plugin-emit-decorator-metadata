@@ -1,1 +1,1 @@
-export { esbuildDecoratorsMetadata, } from "./lib/esbuild-decorators-metadata.js";
+export { esbuildDecoratorsMetadata as esbuildEmitDecoratorMetadata } from "./lib/esbuild-decorators-metadata.js";

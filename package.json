@@ -1,6 +1,6 @@
 {
   "name": "esbuild-plugin-emit-decorator-metadata",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Plugin for esbuild to support emitDecoratorMetadata",
   "type": "module",
   "main": "src/index.js",

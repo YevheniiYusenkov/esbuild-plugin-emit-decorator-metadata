@@ -1,4 +1,4 @@
 export {
   type EsbuildDecoratorsMetadataOptions,
-  esbuildDecoratorsMetadata,
+  esbuildDecoratorsMetadata as esbuildEmitDecoratorMetadata,
 } from "./lib/esbuild-decorators-metadata.js";
