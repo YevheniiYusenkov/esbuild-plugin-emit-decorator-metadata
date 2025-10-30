@@ -1,4 +1,5 @@
 import { readFileSync } from "fs";
+
 import { strip } from "../lib/strip-it";
 
 describe(`Strip It`, () => {

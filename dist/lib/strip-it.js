@@ -1,6 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.strip = void 0;
 class TextNode {
     constructor(node) {
         this.type = node.type;
@@ -145,6 +142,4 @@ const compile = (cst) => {
     };
     return walk(cst);
 };
-const strip = (input) => compile(parse(input));
-exports.strip = strip;
-//# sourceMappingURL=strip-it.js.map
+export const strip = (input) => compile(parse(input));

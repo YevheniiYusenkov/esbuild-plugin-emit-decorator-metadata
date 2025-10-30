@@ -7,7 +7,7 @@ import {
   type ParsedCommandLine,
 } from "typescript";
 
-import { printDiagnosticsErrors } from "./diagnostics";
+import { printDiagnosticsErrors } from "./diagnostics.js";
 
 export function parseTsConfig(
   tsconfig: string,

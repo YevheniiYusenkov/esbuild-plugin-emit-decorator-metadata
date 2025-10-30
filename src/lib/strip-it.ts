@@ -41,9 +41,10 @@ class TextBlock extends TextNode {
   }
 }
 
+// QUOTED_STRING_REGEX: /^(['"`])((?:\\.|[^\1])*?)(\1)/ --- Original reges with ts error
+
 const constants = {
   ESCAPED_CHAR_REGEX: /^\\./,
-  // QUOTED_STRING_REGEX: /^(['"`])((?:\\.|[^\1])*?)(\1)/,
   QUOTED_STRING_REGEX:
     /^(?:'((?:\\.|[^'])*?)'|"((?:\\.|[^"])*?)"|`((?:\\.|[^`])*?)`)/,
   NEWLINE_REGEX: /^\r*\n/,

@@ -4,9 +4,9 @@ import { join, dirname } from "path";
 import type { Plugin } from "esbuild";
 import { transpileModule } from "typescript";
 
-import { strip } from "./strip-it";
-import { printDiagnostics, printDiagnosticsErrors } from "./diagnostics";
-import { parseTsConfig } from "./parse-tsconfig";
+import { strip } from "./strip-it.js";
+import { printDiagnostics, printDiagnosticsErrors } from "./diagnostics.js";
+import { parseTsConfig } from "./parse-tsconfig.js";
 
 export interface EsbuildDecoratorsMetadataOptions {
   tsconfig?: string;

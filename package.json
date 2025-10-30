@@ -2,13 +2,18 @@
   "name": "esbuild-decorators-metadata",
   "version": "0.0.1",
   "description": "Plugin for esbuild to support emitDecoratorMetadata",
+  "type": "module",
   "main": "src/index.js",
   "types": "src/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "scripts": {
-    "build": "rimraf dist && tsc -p tsconfig.lib.json",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "build": "rimraf dist && tsc -p tsconfig.json",
+    "test": "jest -c jest.config.cjs"
   },
   "repository": {
     "type": "git",
