@@ -20,6 +20,7 @@ describe(`plugin tests`, () => {
       tsconfig: `wrong/config/file/for/testing/just/to/make/sure/override/works`,
     });
     const plugin = esbuildDecoratorsMetadata({
+      workers: 4,
       tsconfig: `${__dirname}/mock-project/app/tsconfig.app.json`,
     });
     plugin.setup(mockService);
