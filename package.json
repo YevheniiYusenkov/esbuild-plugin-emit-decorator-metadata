@@ -1,5 +1,5 @@
 {
-  "name": "esbuild-decorators-metadata",
+  "name": "esbuild-plugin-emit-decorator-metadata",
   "version": "0.0.1",
   "description": "Plugin for esbuild to support emitDecoratorMetadata",
   "type": "module",
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anatine/esbuildnx"
+    "url": "git+https://github.com/YevheniiYusenkov/esbuild-plugin-emit-decorator-metadata.git"
   },
   "keywords": [
     "emitDecoratorMetadata",

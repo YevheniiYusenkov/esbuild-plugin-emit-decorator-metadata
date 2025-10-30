@@ -18,13 +18,13 @@ Thanks to [Brian McBride](https://github.com/Brian-McBride) for publish his esbu
 Install esbuild and the plugin
 
 ```shell
-npm install -D esbuild esbuild-plugin-emit-decorators-metadata
+npm install -D esbuild esbuild-plugin-emit-decorator-metadata
 ```
 
 Set up a esbuild.config.js config, for example:
 
 ```typescript
-import { esbuildEmitDecoratorMetadata } from "esbuild-plugin-emit-decorators-metadata";
+import { esbuildEmitDecoratorMetadata } from "esbuild-plugin-emit-decorator-metadata";
 import { resolve } from "path";
 
 module.exports = {
