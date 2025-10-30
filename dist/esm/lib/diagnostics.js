@@ -5,3 +5,4 @@ export function printDiagnostics(...args) {
 export function printDiagnosticsErrors(...args) {
     console.error(inspect(args, false, 10, true));
 }
+//# sourceMappingURL=diagnostics.js.map

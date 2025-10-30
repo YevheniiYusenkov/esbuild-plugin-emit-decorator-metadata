@@ -1,14 +1,3 @@
 {
-  "compilerOptions": {
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "target": "ES2020",
-    "rootDir": "./src",
-    "outDir": "./dist",
-    "declaration": true,
-    "verbatimModuleSyntax": true,
-    "types": ["node"]
-  },
-  "include": ["src/**/*.ts"],
-  "exclude": ["dist/**/*", "**/*.spec.ts"]
+  "extends": "./tsconfig.esm.json"
 }

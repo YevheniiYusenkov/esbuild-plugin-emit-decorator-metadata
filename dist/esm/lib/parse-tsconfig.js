@@ -25,3 +25,4 @@ export function parseTsConfig(tsconfig, cwd = process.cwd()) {
         printDiagnosticsErrors(parsedTsConfig.errors);
     return parsedTsConfig;
 }
+//# sourceMappingURL=parse-tsconfig.js.map

@@ -2,13 +2,13 @@
 
 ## Overview
 
-This is a plugin for [esbuild](https://esbuild.github.io/) to support and the tsconfig setting `"emitDecoratorMetadata": true,`
+This is a plugin for [esbuild](https://esbuild.github.io/) to support the tsconfig setting `"emitDecoratorMetadata": true,`
 
 When the decorator flag is set to `true`, the build process will inspect each .ts file and upon a decorator, will transpile with Typescript.
 
 ## Disclaimer
 
-This package is a rewritten version of another package but with correct source map handling. In the original code, source maps were broken, which is why this package was created. Additionally, this module is ESM-only.
+This package is a rewritten version of another package but with correct source map handling. In the original code, source maps were broken, which is why this package was created. The distribution now provides both ESM and CommonJS entry points.
 
 Thanks to [Brian McBride](https://github.com/Brian-McBride) for publish his esbuild-decorators package.
 [Original Source](https://github.com/anatine/esbuildnx/tree/main/packages/esbuild-decorators)
@@ -21,20 +21,41 @@ Install esbuild and the plugin
 npm install -D esbuild esbuild-plugin-emit-decorator-metadata
 ```
 
-Set up a esbuild.config.js config, for example:
+### ESM configuration example (`esbuild.config.mjs`)
 
 ```typescript
 import { esbuildEmitDecoratorMetadata } from "esbuild-plugin-emit-decorator-metadata";
-import { resolve } from "path";
+import { resolve } from "node:path";
+
+export default {
+  keepNames: true,
+  sourcemap: "linked",
+  sourceRoot: resolve(process.cwd(), "src"),
+  outExtension: { ".js": ".js" },
+  plugins: [
+    esbuildEmitDecoratorMetadata({
+      tsconfig: resolve(process.cwd(), "tsconfig.json"),
+    }),
+  ],
+};
+```
+
+### CommonJS configuration example (`esbuild.config.cjs`)
+
+```typescript
+const {
+  esbuildEmitDecoratorMetadata,
+} = require("esbuild-plugin-emit-decorator-metadata");
+const { resolve } = require("node:path");
 
 module.exports = {
   keepNames: true,
   sourcemap: "linked",
-  sourceRoot: path.resolve(__dirname, "src"),
+  sourceRoot: resolve(process.cwd(), "src"),
   outExtension: { ".js": ".js" },
   plugins: [
     esbuildEmitDecoratorMetadata({
-      tsconfig: path.resolve(__dirname, "tsconfig.json"),
+      tsconfig: resolve(process.cwd(), "tsconfig.json"),
     }),
   ],
 };

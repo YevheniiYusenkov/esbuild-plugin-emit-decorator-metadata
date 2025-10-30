@@ -143,3 +143,4 @@ const compile = (cst) => {
     return walk(cst);
 };
 export const strip = (input) => compile(parse(input));
+//# sourceMappingURL=strip-it.js.map
