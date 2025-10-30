@@ -1,5 +1,9 @@
 # Changelog
 
+# 0.2.2
+
+- Updated dist folder
+
 # 0.2.1
 
 - Added tags to package.json
