@@ -1,5 +1,6 @@
 {
   "name": "esbuild-plugin-emit-decorator-metadata",
+  "license": "MIT",
   "version": "0.2.2",
   "description": "Plugin for esbuild to support emitDecoratorMetadata",
   "type": "module",

@@ -1,5 +1,9 @@
 # Changelog
 
+# 0.2.3
+
+- Fixed license
+
 # 0.2.2
 
 - Updated dist folder
